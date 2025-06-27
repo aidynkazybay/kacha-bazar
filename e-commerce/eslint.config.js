@@ -39,7 +39,7 @@ export default tseslint.config(
   {
     files: ['**/*.{ts,tsx}'],
     rules: {
-      ...eslintConfigPrettier,
+      ...eslintConfigPrettier.rules,
       ...prettierPlugin.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
@@ -106,14 +106,21 @@ export default tseslint.config(
               '^(@[a-zA-Z]).[!hooks]*',
               'formik',
               'dayjs',
+              '^.*(@blueprintjs).*$',
+              'axios',
               '^@vitejs',
               '^vite',
               'yup',
+              '^.*(normalize.css).*$',
               'date-fns',
               'swiper/react',
               'swiper/modules',
+              // api
+              '^api/',
+              '^api',
               // components
               '^components/',
+              'App',
               '^shared/ui-kit/',
               '^shared/Form',
               '^(\.|\.{2})/[A-Z]*',

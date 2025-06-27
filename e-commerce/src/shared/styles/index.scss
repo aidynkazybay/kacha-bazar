@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $c-body-bg;
+  margin: 0;
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+}
